@@ -75,9 +75,9 @@
         Symbols {
             display-name = "Sym";
             bindings = <
-                &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT  &kp DQT
-                &trans    &trans  &trans    &trans      &trans         &trans     &trans         &trans           &trans   &trans
-&studio_unlock  &trans    &trans  &trans    &trans      &trans         &kp UNDER  &kp EQUAL      &trans           &trans   &kp SLASH  &kp HOME
+                &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+                &trans    &trans  &trans    &trans      &trans         &trans     &trans         &trans           &kp SQT               &kp DOUBLE_QUOTES
+&studio_unlock  &trans    &trans  &trans    &trans      &trans         &kp UNDER  &kp EQUAL      &trans           &trans                &kp SLASH              &kp BACKSLASH
                                   &trans    &trans      &trans         &trans     &trans         &trans
             >;
         };
@@ -85,20 +85,20 @@
         Navig {
             display-name = "Fun";
             bindings = <
-       &kp ESC   &kp LC(PG_UP)      &kp LC(W)  &kp LC(PG_DN)      &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
-       &kp CAPS  &trans             &trans     &trans             &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&sl 3  &trans    &kp LS(LC(PG_UP))  &kp LC(W)  &kp LS(LC(PG_DN))  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
-                                    &trans     &trans             &trans    &trans  &trans  &trans
+       &kp ESC   &kp LC(PG_UP)      &kp LC(W)  &kp LC(PG_DN)      &trans    &kp PG_UP       &kp HOME        &kp END  &kp F9           &kp DEL
+       &kp CAPS  &trans             &trans     &trans             &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP   &kp RIGHT_ARROW  &kp PG_DN
+&sl 4  &trans    &kp LS(LC(PG_UP))  &kp LC(W)  &kp LS(LC(PG_DN))  &trans    &trans          &trans          &trans   &trans           &trans     &trans
+                                    &trans     &trans             &trans    &trans          &trans          &trans
             >;
         };
 
         Fun {
             display-name = "Fun";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
-                        &sl 0   &trans  &trans    &trans  &trans  &trans
+        &studio_unlock  &bootloader  &sys_reset  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
+        &trans          &trans       &trans      &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans          &trans       &trans      &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+                                     &sl 0       &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
